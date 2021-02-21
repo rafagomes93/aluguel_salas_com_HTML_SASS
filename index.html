@@ -20,5 +20,33 @@
         <img class='expositor' src="./img/main.jpg" alt="Banner principal">
         <h1 class="chamada">Alugue <span>Já!<span></h1>
     </main>
+    <section class="conheca">
+        <div class="modal">
+            <p class="times">&times;</p>
+            <span>Sala Comercial</span>
+            <p class="instrucao">Tem dúvidas? Deixe seus dados que nossa equipe entrará em contato.</p>  
+           
+            <form action="https://api.staticforms.co/submit?form=3bXFP9" method='POST'>
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" id="nome" min='10' maxlength='50' required><br>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" maxlength="40" required><br>
+                <label for="texto">Mensagem:</label><br>
+                <textarea name="message" id="texto" cols="30" rows="8" maxlength="100" required></textarea><br>
+                <button class='enviar' type="submit">Enviar</button>
+            </form>
+        </div>
+        <div class="info">
+            <h2>conheça</h2>
+            <p class="destaque">Encontre o espaço que vai atender as suas necessidades por um preço bem baixinho.</p>
+            <p class="texto">Temos ambientes amplos e planejados para seu conforto. Possuimos uma das melhores estruturas do mercado e facilidades de pagamento. Será um prazer ter você com a gente!</p>
+            <button class="btn">Consulte</button>
+        </div>
+        <div class="imagens">
+            <img clas='amb' src="./img/07.jpg" alt="Sala de espera">
+        </div>
+    </section>
+
+    <script src="./js/script.js"></script>
 </body>
 </html>

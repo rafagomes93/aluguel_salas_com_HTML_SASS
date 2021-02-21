@@ -5,6 +5,7 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
+  font-size: 18px;
 }
 
 .cabecalho {
@@ -37,8 +38,8 @@
 .cabecalho ul li a {
   text-decoration: none;
   color: #fff;
-  -webkit-transition: .5s;
-  transition: .5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .cabecalho ul li a:hover {
@@ -67,5 +68,145 @@
 
 .banner .chamada span {
   color: #272727;
+  font-size: 70px;
+}
+
+.conheca {
+  width: 100%;
+  padding: 5rem 10rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.conheca .modal {
+  width: 500px;
+  height: 550px;
+  position: absolute;
+  background: #fff;
+  left: 24rem;
+  top: 35rem;
+  border: 1px solid #272727;
+  padding: 2rem;
+  display: none;
+  -webkit-animation: animate;
+          animation: animate;
+  -webkit-animation-duration: 800ms;
+          animation-duration: 800ms;
+}
+
+@-webkit-keyframes animate {
+  from {
+    opacity: 1;
+  }
+  from {
+    opacity: 0;
+  }
+}
+
+@keyframes animate {
+  from {
+    opacity: 1;
+  }
+  from {
+    opacity: 0;
+  }
+}
+
+.conheca .modal .times {
+  font-size: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  position: absolute;
+  right: 2rem;
+}
+
+.conheca .modal span {
+  position: relative;
+  top: 2rem;
+  font-size: 25px;
+  font-weight: bold;
+  color: #193e51;
+}
+
+.conheca .modal .instrucao {
+  padding: 2rem 0 .5rem 0;
+}
+
+.conheca .modal form input {
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+.conheca .modal form input:invalid {
+  border-color: red;
+}
+
+.conheca .modal form input:valid {
+  border-color: green;
+}
+
+.conheca .modal form textarea {
+  width: 100%;
+}
+
+.conheca .modal form button {
+  width: 100%;
+  margin-top: .5em;
+  background-color: #193e51;
+  color: #fff;
+  border: none;
+  padding: .7rem;
+  cursor: pointer;
+}
+
+.conheca .modal form button:hover {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background-color: #0d202a;
+}
+
+.conheca .info {
+  width: 500px;
+  margin-right: 1rem;
+}
+
+.conheca .info h2 {
+  font-size: 90px;
+  text-transform: uppercase;
+  color: #272727;
+}
+
+.conheca .info .destaque {
+  font-weight: 700;
+  padding-bottom: 1rem;
+}
+
+.conheca .info .texto {
+  word-wrap: wrap;
+}
+
+.conheca .info .btn {
+  margin-top: 1rem;
+  border: none;
+  padding: 1em;
+  cursor: pointer;
+  background-color: #193e51;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.conheca .info .btn:hover {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background-color: #0d202a;
+}
+
+.conheca .imagens {
+  width: 500px;
+}
+
+.conheca .imagens img {
+  width: 100%;
 }
 /*# sourceMappingURL=style.css.map */

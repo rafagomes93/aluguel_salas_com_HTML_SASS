@@ -1,11 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap');
 @import './variaveis';
 
+//Reset
+
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
+    font-size: 18px;
 }
 
 .cabecalho{
@@ -26,7 +29,7 @@
         li a{
             text-decoration: none;
             color: $cor-branca;
-            transition: .5s;
+            transition: $tempo-padrao;
             
             &:hover{
                 color: $cor-laranja;
@@ -48,7 +51,7 @@
 
     .chamada{
         text-transform: uppercase;
-        font-size: 70px;
+        font-size: $texto-principal;
         position: relative;
         text-align: center;
         top: 200px;
@@ -56,6 +59,131 @@
 
         span{
             color: $cor-terciaria;
+            font-size: $texto-principal;
+        }
+    }
+}
+
+.conheca{
+    width: 100%;
+    padding: $pad-padrao;
+    display: flex;
+    
+    .modal{
+        width: 500px;
+        height: 550px;
+        position: absolute;
+        background: $cor-branca;
+        left: 24rem;
+        top: 35rem;
+        border: 1px solid $cor-terciaria;
+        padding: 2rem;
+        display: none;
+        animation: animate;
+        animation-duration: 800ms;
+
+        @keyframes animate{
+            from{opacity: 1}
+            from{opacity: 0}
+        }
+        
+
+            .times{
+                font-size: 30px;
+                font-weight: bold;
+                cursor: pointer;
+                position: absolute;
+                right: 2rem;
+            }
+    
+            span{
+                position: relative;
+                top: 2rem;
+                font-size: 25px;
+                font-weight: bold;
+                color: $cor-primaria;
+            }
+            
+            .instrucao{
+                padding: 2rem 0 .5rem 0;
+            }
+
+            form{
+                input{
+                    width: 100%;
+                    margin-bottom: 5px;
+
+                    &:invalid{
+                        border-color: red;
+                    }
+
+                    &:valid{
+                        border-color: green;
+                    }
+                }
+
+                textarea{
+                    width: 100%;
+                }
+
+                button{
+                    width: 100%;
+                    margin-top: .5em;
+                    background-color: $cor-primaria;
+                    color: $cor-branca;
+                    border: none;
+                    padding: .7rem;
+                    cursor: pointer;
+
+                    &:hover{
+                        transition: $tempo-padrao;
+                        background-color: darken($cor-primaria, 10%);
+                    }
+                }
+            }
+
+    }
+
+    .info{
+        width: $lado-lado;
+        margin-right: 1rem;
+
+        h2{
+            font-size: 90px;
+            text-transform: uppercase;
+            color: $cor-terciaria;
+        }
+
+        .destaque{
+            font-weight: 700;
+            padding-bottom: 1rem;
+        }
+
+        .texto{
+            word-wrap: wrap;
+        }
+
+        .btn{
+            margin-top: 1rem;
+            border: none;
+            padding: 1em;
+            cursor: pointer;
+            background-color: $cor-primaria;
+            color: $cor-branca;
+            border-radius: 5px;
+
+            &:hover{
+                transition: $tempo-padrao;
+                background-color: darken($cor-primaria, 10%);
+            }
+        }
+    }
+
+    .imagens{
+        width: $lado-lado;
+
+        img{
+            width: 100%;
         }
     }
 }
