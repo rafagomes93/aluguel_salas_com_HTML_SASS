@@ -184,6 +184,7 @@
 
 .conheca .info .texto {
   word-wrap: wrap;
+  font-weight: 300;
 }
 
 .conheca .info .btn {
@@ -208,5 +209,51 @@
 
 .conheca .imagens img {
   width: 100%;
+}
+
+.fotos {
+  width: 100%;
+  height: 115vh;
+  background-color: #272727;
+  padding: 5rem 10rem;
+}
+
+.fotos h2 {
+  color: #fff;
+  font-size: 35px;
+  padding-bottom: 1rem;
+}
+
+.fotos p {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 300;
+  padding-bottom: 1rem;
+}
+
+.fotos .ambientes {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.fotos .ambientes .card-img img {
+  width: 327px;
+  padding: 5px;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.fotos .ambientes .card-img img:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+  padding: 0;
+  -webkit-box-shadow: 2px 2px 3px #fff;
+          box-shadow: 2px 2px 3px #fff;
 }
 /*# sourceMappingURL=style.css.map */

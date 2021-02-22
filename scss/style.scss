@@ -161,6 +161,7 @@
 
         .texto{
             word-wrap: wrap;
+            font-weight: 300;
         }
 
         .btn{
@@ -184,6 +185,47 @@
 
         img{
             width: 100%;
+        }
+    }
+}
+
+.fotos{
+    width: 100%;
+    height: 115vh;
+    background-color: $cor-terciaria;
+    padding: $pad-padrao;
+
+    h2{
+        color: $cor-branca;
+        font-size: 35px;
+        padding-bottom: $pad-bot;
+    }
+
+    p{
+        color: $cor-branca;
+        font-size: 18px;
+        font-weight: 300;
+        padding-bottom: $pad-bot;
+    }
+
+    .ambientes{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+        .card-img{
+            img{
+                width: 327px;
+                padding: 5px;
+                transition: 1s;
+
+                &:hover{
+                    transform: scale(1.5);
+                    padding: 0;
+                    box-shadow: 2px 2px 3px $cor-branca;
+                }
+            }
         }
     }
 }
