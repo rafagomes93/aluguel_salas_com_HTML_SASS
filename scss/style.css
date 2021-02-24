@@ -256,4 +256,68 @@
   -webkit-box-shadow: 2px 2px 3px #fff;
           box-shadow: 2px 2px 3px #fff;
 }
+
+.especs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 5rem 10rem;
+}
+
+.especs h2 {
+  font-size: 35px;
+  padding-bottom: 1rem;
+}
+
+.especs p {
+  padding-bottom: 2rem;
+  font-weight: 300;
+  font-size: 18px;
+}
+
+.especs .load_circ {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+  -webkit-transform: translate(0%, 0%);
+          transform: translate(0%, 0%);
+}
+
+.especs .card .circle {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  position: relative;
+}
+
+.especs .card .circle .box {
+  height: 100%;
+  width: 100%;
+  -webkit-transform: translate(-20%, -19%);
+          transform: translate(-20%, -19%);
+}
+
+.especs .card .circle .box span {
+  position: absolute;
+  top: -47%;
+  left: 53%;
+  font-size: 38px;
+  font-weight: bold;
+  -webkit-transition: all .1s;
+  transition: all .1s;
+}
+
+.especs .card .texto {
+  -webkit-transform: translate(0%, 20%);
+          transform: translate(0%, 20%);
+  text-align: center;
+  color: #193e51;
+}
 /*# sourceMappingURL=style.css.map */
