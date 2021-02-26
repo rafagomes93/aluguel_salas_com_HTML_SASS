@@ -324,9 +324,9 @@
 
 .newsletter {
   width: 100%;
-  height: 30vh;
+  height: 35vh;
   background-color: #146666;
-  padding: 2.5rem 10rem;
+  padding: 3rem 10rem;
 }
 
 .newsletter h2 {
@@ -377,5 +377,10 @@
   -webkit-transition: 0.5s;
   transition: 0.5s;
   background-color: #0d202a;
+}
+
+.mapa .map {
+  height: 200px;
+  width: 100%;
 }
 /*# sourceMappingURL=style.css.map */
