@@ -132,11 +132,17 @@
 
 .conheca .modal .instrucao {
   padding: 2rem 0 .5rem 0;
+  font-weight: 300;
+}
+
+.conheca .modal form label {
+  font-weight: 300;
 }
 
 .conheca .modal form input {
   width: 100%;
   margin-bottom: 5px;
+  font-weight: 300;
 }
 
 .conheca .modal form input:invalid {
@@ -196,6 +202,7 @@
   background-color: #193e51;
   color: #fff;
   border-radius: 5px;
+  font-weight: 300;
 }
 
 .conheca .info .btn:hover {
@@ -254,8 +261,7 @@
   -webkit-transform: scale(1.5);
           transform: scale(1.5);
   padding: 0;
-  -webkit-box-shadow: 2px 2px 3px #fff;
-          box-shadow: 2px 2px 3px #fff;
+  border: 5px solid #fff;
 }
 
 .especs {
@@ -358,6 +364,7 @@
   border: none;
   border-radius: 4px;
   padding: 5px;
+  font-weight: 300;
 }
 
 .newsletter form button {

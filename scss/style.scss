@@ -107,12 +107,18 @@
             
             .instrucao{
                 padding: 2rem 0 .5rem 0;
+                font-weight: 300;
             }
 
             form{
+                label{
+                    font-weight: 300;
+                }
+
                 input{
                     width: 100%;
                     margin-bottom: 5px;
+                    font-weight: 300;
 
                     &:invalid{
                         border-color: red;
@@ -173,6 +179,7 @@
             background-color: $cor-primaria;
             color: $cor-branca;
             border-radius: 5px;
+            font-weight: 300;
 
             &:hover{
                 transition: $tempo-padrao;
@@ -224,7 +231,7 @@
                 &:hover{
                     transform: scale(1.5);
                     padding: 0;
-                    box-shadow: 2px 2px 3px $cor-branca;
+                    border: 5px solid $cor-branca;
                 }
             }
         }
@@ -314,6 +321,7 @@
             border: none;
             border-radius: 4px;
             padding: 5px;
+            font-weight: 300;
         }
 
         button{
